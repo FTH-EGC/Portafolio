@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React, {Fragment} from 'react'
+import Hero from './components/Hero';
 
 function App() {
   return (
-    <h1>Portafolio</h1>
+    <Fragment>
+
+    <Hero />
+
+    </Fragment>
   );
 }
 
