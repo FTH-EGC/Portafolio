@@ -2,10 +2,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
 
-const ContenidoHero = styled.div`
-    max-height: 100vh;
-`;
-
 const ContenedorImagenHero = styled.div`
 
     display: flex;
@@ -24,11 +20,13 @@ const ImagenHero2 = styled.img`
     width: 20rem;
     top: 37rem;
     transition: all .4s ease-in-out;
+    visibility: hidden;
 
     @media (min-width: 768px){
         margin: 0;
         top: 28rem;
         width: 50rem;
+        visibility: visible;
     }
 
 `;
@@ -36,11 +34,11 @@ const ImagenHero2 = styled.img`
 const ContenidoPrincipal = styled.div`
 
     color: #ffffff;
-    border: 13px solid #9C9A9A;
+    border: 15px solid #8E59DE;
     border-radius: 35px;
     padding: 3rem 1rem;
     position: relative;
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     margin-top: 2rem;
     position: relative;
@@ -59,28 +57,54 @@ const ContenidoPrincipal = styled.div`
     p{
         font-size: 2rem;
         text-align: center;
-        margin: 1rem 0;
+        font-weight: bold;
+        margin: 0;
     }
     @media (min-width: 768px){
-        padding: 5rem 1rem;
+        padding: 4rem 1rem;
         h1{
             font-size: 5rem;
         }
         h2{
             font-size: 2rem;
         }
-        p{
-            margin-bottom: 2rem;
+    }
+`;
+
+const Nav = styled.nav`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    a{
+        flex: 1;
+        color: #8E59DE;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 1rem;
+        transition: all .2s ease-in-out;
+        &:hover{
+            color: #4b24b5;
+        }
+    }
+
+    @media (min-width: 768px){
+        flex-direction: row;
+        
+        a{
+            margin: 0;
         }
     }
 `;
 
-const texto = '</>';
 
+
+let texto = '</>'
 
 const Hero = () => {
     return ( 
-        <ContenidoHero>
+        <div>
 
             <div className="contenedor-imagenes">
                 <ContenedorImagenHero>
@@ -91,12 +115,19 @@ const Hero = () => {
                     <h1>Erick García</h1>
                     <h2>Desarrollador Web</h2>
                     <p>{texto}</p>
+                    <Nav>
+                        <a href="!#">Sobre Mí</a>
+                        <a href="!#">Tecnologías</a>
+                        <a href="!#">Proyectos</a>
+                        <a href="!#">Contacto</a>
+                    </Nav>
+
                 </ContenidoPrincipal>
             </div>
             
             <ImagenHero2 src={imagenes.imgHer2} alt=""/>
             
-        </ContenidoHero>
+        </div>
 
      );
 }
