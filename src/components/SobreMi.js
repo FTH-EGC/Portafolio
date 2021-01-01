@@ -2,10 +2,6 @@ import React from 'react'
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
 
-const SeccionPersonal = styled.section`
-    display: none;
-
-`;
 
 const InfoPersonal = styled.div`
 
@@ -49,7 +45,7 @@ const ImagenMi = styled.img`
 const SobreMi = () => {
     return ( 
 
-        <SeccionPersonal>
+        <section className="seccion-personal">
             <div className="contenedor">
                 <InfoPersonal>
                     <h2>Sobre Mí</h2>
@@ -66,7 +62,7 @@ const SobreMi = () => {
                     </ContenidoPersonal>
                 </InfoPersonal>
             </div>
-        </SeccionPersonal>
+        </section>
 
      );
 }

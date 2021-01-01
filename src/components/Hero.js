@@ -84,7 +84,7 @@ const Nav = styled.nav`
     flex-direction: column;
     text-align: center;
     margin-top: 2rem;
-    p{
+    a{
         flex: 1;
         color: #8E59DE;
         text-decoration: none;
@@ -101,7 +101,7 @@ const Nav = styled.nav`
     @media (min-width: 768px){
         flex-direction: row;
         
-        p{
+        a{
             margin: 0;
         }
     }
@@ -142,6 +142,19 @@ const Hero = () => {
     }, [])
 
 
+    const scrollElemento= e => {
+        e.preventDefault();
+        const seccionSobre = document.querySelector('.seccion-personal');
+        seccionSobre.scrollIntoView({behavior: 'smooth'}); 
+    } 
+
+    const scrollElementoTec= e => {
+        e.preventDefault();
+        const seccionTec = document.querySelector('.seccion-tecnologias img');
+        seccionTec.scrollIntoView({behavior: 'smooth'}); 
+    } 
+
+
     return ( 
         <SectionHero ref={el => hero = el} >
 
@@ -175,10 +188,10 @@ const Hero = () => {
 
                 <div className="contenedor">
                     <Nav>
-                        <p href="!#">Sobre Mí</p>
-                        <p href="!#">Tecnologías</p>
-                        <p href="!#">Proyectos</p>
-                        <p href="!#">Contacto</p>
+                        <a href="#" onClick={ scrollElemento}>Sobre Mí</a>
+                        <a href="#" onClick={scrollElementoTec}>Tecnologías</a>
+                        <a href="!#">Proyectos</a>
+                        <a href="!#">Contacto</a>
                     </Nav>
                 </div>
 

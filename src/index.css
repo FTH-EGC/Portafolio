@@ -32,3 +32,17 @@ h2{
   max-width: 1000px;
   margin: 0 auto;
 }
+
+
+.seccion-personal{
+  margin-top: 5rem;
+}
+.seccion-tecnologias{
+  background-color: #7B60A1;
+  padding: 1rem 0 2rem 0;
+  margin: 4rem 0;
+
+}
+.seccion-tecnologias h2{
+  color: #ffffff;
+}

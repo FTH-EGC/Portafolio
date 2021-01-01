@@ -1,15 +1,20 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
 import Hero from './components/Hero';
 import SobreMi from './components/SobreMi';
 import Tecnologias from './components/Tecnologias';
 
+
+
 function App() {
+
+
   return (
     <Fragment>
-    <Hero />
+    <Hero
 
-    <SobreMi />
-    <Tecnologias />
+    />
+    <SobreMi /> 
+    <Tecnologias /> 
 
     </Fragment>
   );

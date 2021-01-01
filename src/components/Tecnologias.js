@@ -2,18 +2,6 @@ import React from 'react'
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
 
-const SeccionTecnologia = styled.section`
-
-    background-color: #7B60A1;
-    padding: 1rem 0 2rem 0;
-    margin: 4rem 0;
-    display: none;
-    h2{
-        color: #ffffff;
-    }
-
-`;
-
 const TecnologiasDiv = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -55,7 +43,7 @@ const Img3 = styled.img`
 const Tecnologias = () => {
     return ( 
 
-        <SeccionTecnologia>
+        <section className="seccion-tecnologias">
             <div className="contenedor">
                 <h2>Tecnologías que utilizo</h2>
                 <TecnologiasDiv>
@@ -86,7 +74,7 @@ const Tecnologias = () => {
 
                 </TecnologiasDiv>
             </div>
-        </SeccionTecnologia>
+        </section>
 
      );
 }
