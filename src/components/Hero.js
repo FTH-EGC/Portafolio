@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
-
+import ReactTypingEffect from 'react-typing-effect';
 
 
 const ContenedorImagenHero = styled.div`
@@ -36,7 +36,7 @@ const ContenidoPrincipal = styled.div`
     border: 15px solid #8E59DE;
     border-radius: 35px;
     padding: 3rem 1rem;
-    max-width: 750px;
+    max-width: 820px;
     margin: 0 auto;
     margin-top: 2rem;
     transition: all .4s ease-in-out;
@@ -44,7 +44,9 @@ const ContenidoPrincipal = styled.div`
         font-size: 3rem;
         text-align: center;
         margin: 1rem 0;
+
     }
+
 
     p{
         font-size: 2rem;
@@ -92,6 +94,8 @@ const Nav = styled.nav`
 let texto = '</>'
 
 const Hero = () => {
+
+
     return ( 
         <div >
 
@@ -100,7 +104,25 @@ const Hero = () => {
                     <ImagenHero1 src={imagenes.imgHero} alt=""/>
                 </ContenedorImagenHero>
                 <ContenidoPrincipal>
-                    <h1>Erick García</h1>
+                    <ReactTypingEffect
+                            text={["Erick García Castillo"]}
+                            cursorRenderer={cursor => <h1>{cursor}</h1>}
+                            displayTextRenderer={(text, i) => {
+                            return (
+                                <h1>
+                                {text.split('').map((char, i) => {
+                                    const key = `${i}`;
+                                    return (
+                                    <span
+                                        key={key}
+                                        style={{color: 'white'}}
+                                    >{char}</span>
+                                    );
+                                })}
+                                </h1>
+                            );
+                            }}        
+                    />
                     <h2>Desarrollador Web</h2>
                     <p>{texto}</p>
                 </ContenidoPrincipal>
