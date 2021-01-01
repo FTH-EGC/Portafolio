@@ -2,7 +2,7 @@ import React, {Fragment, useState, useEffect} from 'react'
 import Hero from './components/Hero';
 import SobreMi from './components/SobreMi';
 import Tecnologias from './components/Tecnologias';
-
+import Proyectos from './components/Proyectos';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     />
     <SobreMi /> 
     <Tecnologias /> 
-
+    <Proyectos />
     </Fragment>
   );
 }
