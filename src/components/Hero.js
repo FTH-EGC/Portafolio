@@ -2,6 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
 
+const ContenidoHero = styled.div`
+
+    height: 100vh;
+
+`;
+
+
 const ContenedorImagenHero = styled.div`
 
     display: flex;
@@ -104,7 +111,7 @@ let texto = '</>'
 
 const Hero = () => {
     return ( 
-        <div>
+        <ContenidoHero>
 
             <div className="contenedor-imagenes">
                 <ContenedorImagenHero>
@@ -127,7 +134,7 @@ const Hero = () => {
             
             <ImagenHero2 src={imagenes.imgHer2} alt=""/>
             
-        </div>
+        </ContenidoHero>
 
      );
 }
