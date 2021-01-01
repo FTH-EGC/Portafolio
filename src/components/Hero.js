@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import styled from '@emotion/styled';
+import {TweenMax, TimelineLite, Power3} from 'gsap';
 import {imagenes} from '../assets/imagenes';
 import ReactTypingEffect from 'react-typing-effect';
 
+
+const SectionHero = styled.section`
+
+    visibility: hidden;
+
+`;
 
 const ContenedorImagenHero = styled.div`
 
@@ -13,13 +20,22 @@ const ContenedorImagenHero = styled.div`
 `;
 
 const ContenedorImagenHero2 = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(5,max-content);
+    column-gap: 1rem;
+    margin: 4rem 0 1rem 0;
+    img{
+        height: 3.75rem;
+        transition: all .7s;
 
-    &:hover{
-        
+        @media (min-width: 768px){
+            height: 6rem;
+        }
     }
+    @media (min-width: 768px){
+        column-gap: 1.5rem;
+    }
+
 
 `;
 
@@ -41,11 +57,12 @@ const ContenidoPrincipal = styled.div`
     margin-top: 2rem;
     transition: all .4s ease-in-out;
     h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
         text-align: center;
         margin: 1rem 0;
 
     }
+
 
 
     p{
@@ -67,7 +84,7 @@ const Nav = styled.nav`
     flex-direction: column;
     text-align: center;
     margin-top: 2rem;
-    a{
+    p{
         flex: 1;
         color: #8E59DE;
         text-decoration: none;
@@ -77,13 +94,14 @@ const Nav = styled.nav`
         transition: all .2s ease-in-out;
         &:hover{
             color: #4b24b5;
+            cursor: pointer;
         }
     }
 
     @media (min-width: 768px){
         flex-direction: row;
         
-        a{
+        p{
             margin: 0;
         }
     }
@@ -95,12 +113,40 @@ let texto = '</>'
 
 const Hero = () => {
 
+    let hero = useRef(null);
+    let images = useRef(null);
+    let imgComp = useRef(null);
+    let tl = new TimelineLite({delay: .8});
+
+    useEffect(() => {
+
+        // Images Vars 
+        const icon1 = images.children[0];
+        const icon2 = images.children[1];
+        const icon3 = images.children[2];
+        const icon4 = images.children[3];
+        const icon5 = images.children[4];
+
+
+        TweenMax.to(hero, 0, {css:{visibility: 'visible'}})
+
+        tl
+        .from(imgComp, 1.2, {x: -1920, ease: Power3.easeOut}, {duration: 2})
+        .from(icon5, 1.2, {x: -1920, ease: Power3.easeOut}, {duration: 1})
+        .from(icon4, 1.4, {x: -1920, ease: Power3.easeOut}, {duration: 1})
+        .from(icon3, 1.6, {x: -1920, ease: Power3.easeOut}, {duration: 1})
+        .from(icon2, 1.8, {x: -1920, ease: Power3.easeOut}, {duration: 1})
+        .from(icon1, 2, {x: -1920, ease: Power3.easeOut}, {duration: 1})
+
+     //eslint-disable-next-line
+    }, [])
+
 
     return ( 
-        <div >
+        <SectionHero ref={el => hero = el} >
 
             <div className="contenedor-imagenes">
-                <ContenedorImagenHero>
+                <ContenedorImagenHero ref={el => imgComp = el}>
                     <ImagenHero1 src={imagenes.imgHero} alt=""/>
                 </ContenedorImagenHero>
                 <ContenidoPrincipal>
@@ -129,19 +175,23 @@ const Hero = () => {
 
                 <div className="contenedor">
                     <Nav>
-                        <a href="!#">Sobre Mí</a>
-                        <a href="!#">Tecnologías</a>
-                        <a href="!#">Proyectos</a>
-                        <a href="!#">Contacto</a>
+                        <p href="!#">Sobre Mí</p>
+                        <p href="!#">Tecnologías</p>
+                        <p href="!#">Proyectos</p>
+                        <p href="!#">Contacto</p>
                     </Nav>
                 </div>
 
-                <ContenedorImagenHero2>
-                    <ImagenHero1 src={imagenes.imgHero3} alt=""/>
+                <ContenedorImagenHero2 ref={el => images = el}>
+                    <img src={imagenes.imgDev1} alt="Imagen Icono Dev"/>
+                    <img src={imagenes.imgDev2} alt="Imagen Icono Dev"/>
+                    <img src={imagenes.imgDev3} alt="Imagen Icono Dev"/>
+                    <img src={imagenes.imgDev4} alt="Imagen Icono Dev"/>
+                    <img src={imagenes.imgDev5} alt="Imagen Icono Dev"/>
                 </ContenedorImagenHero2>
             </div>
             
-        </div>
+        </SectionHero>
 
      );
 }

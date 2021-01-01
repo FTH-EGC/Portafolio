@@ -7,6 +7,7 @@ const SeccionTecnologia = styled.section`
     background-color: #7B60A1;
     padding: 1rem 0 2rem 0;
     margin: 4rem 0;
+    display: none;
     h2{
         color: #ffffff;
     }
