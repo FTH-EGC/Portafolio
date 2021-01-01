@@ -14,6 +14,13 @@ img{
   max-width: 100%;
 }
 
+h2{
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 1rem;
+}
+
 .contenedor-imagenes{
   width: 90%;
   max-width: 1600px;

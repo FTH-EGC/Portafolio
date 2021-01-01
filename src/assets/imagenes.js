@@ -1,7 +1,7 @@
 import Celular from './img/celular.svg';
 import Css3 from './img/css3.svg';
 import Hero from './img/hero.svg';
-import Hero2 from './img/hero2.svg';
+import Hero3 from './img/hero3.svg';
 import HTML5 from './img/html5.svg';
 import Laptop from './img/laptop.svg';
 import JS from './img/logo-javascript.svg';
@@ -18,7 +18,7 @@ export const imagenes = {
     imgCelular: Celular,
     imgCss3: Css3,
     imgHero: Hero,
-    imgHer2: Hero2,
+    imgHero3: Hero3,
     imgHTML5: HTML5,
     imgLaptop: Laptop,
     imgJS: JS,

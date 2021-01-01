@@ -10,9 +10,6 @@ const InfoPersonal = styled.div`
     text-align: center;
     padding: 2rem;
     border-radius: 20px;
-    h2{
-        font-size: 2rem;
-    }
     
 `;
 
@@ -27,6 +24,9 @@ const ContenidoPersonal = styled.div`
 `;
 const DescripcionPersonal = styled.div`
     flex-basis: 50%;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1.1rem;
 
 `;
 
@@ -51,7 +51,7 @@ const SobreMi = () => {
                         <DescripcionPersonal>
                             <p>
                                 Hola! Me llamo Erick García, tengo 22 años, estudié la carrera de Ing. en Sistemas Computacionales 
-                                y me especialicé en Proyectos Informáticos y Tecnología Web
+                                y me especialicé en Proyectos Informáticos y Tecnología Web.
                             </p>
                         </DescripcionPersonal>
                         <DivImagenMi>

@@ -6,8 +6,8 @@ import SobreMi from './components/SobreMi';
 function App() {
   return (
     <Fragment>
-
     <Hero />
+    
     <SobreMi />
     </Fragment>
   );
