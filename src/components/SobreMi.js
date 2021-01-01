@@ -9,7 +9,7 @@ const InfoPersonal = styled.div`
     grid-template-rows: repeat(2, max-content);
     text-align: center;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 30px;
     
 `;
 
