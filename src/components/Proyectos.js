@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
 import projects from '../proyectos.json';

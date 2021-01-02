@@ -20,7 +20,10 @@ const Icono = ({icono}) => {
         break;
         case 'Styled': 
         iconLenguajes = imagenes.imgStyled;
-    break;
+        break;
+
+        default:
+            break;
 
     }
 

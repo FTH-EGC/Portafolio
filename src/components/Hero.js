@@ -150,7 +150,12 @@ const Hero = () => {
 
     const scrollElementoTec= e => {
         e.preventDefault();
-        const seccionTec = document.querySelector('.seccion-tecnologias img');
+        const seccionTec = document.querySelector('.seccion-tecnologias');
+        seccionTec.scrollIntoView({behavior: 'smooth'}); 
+    } 
+    const scrollElementoPro= e => {
+        e.preventDefault();
+        const seccionTec = document.querySelector('.seccion-proyectos');
         seccionTec.scrollIntoView({behavior: 'smooth'}); 
     } 
 
@@ -188,9 +193,9 @@ const Hero = () => {
 
                 <div className="contenedor">
                     <Nav>
-                        <a href="#" onClick={ scrollElemento}>Sobre Mí</a>
-                        <a href="#" onClick={scrollElementoTec}>Tecnologías</a>
-                        <a href="!#">Proyectos</a>
+                        <a href="!#" onClick={ scrollElemento}>Sobre Mí</a>
+                        <a href="!#" onClick={scrollElementoTec}>Tecnologías</a>
+                        <a href="!#" onClick={scrollElementoPro}>Proyectos</a>
                         <a href="!#">Contacto</a>
                     </Nav>
                 </div>

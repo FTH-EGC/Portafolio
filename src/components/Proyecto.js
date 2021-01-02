@@ -111,14 +111,10 @@ const useStyles = makeStyles(theme => ({
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        overflow: 'scroll',
         height: '100%',
-        maxHeight: 900
-
-    },
-    content:{
-        overflow: 'scroll'
+        maxHeight: 900,
     }
+
 }));
 
 const Proyecto = ({project}) => {
@@ -145,13 +141,13 @@ const Proyecto = ({project}) => {
         case 'imgPro4': 
             imagenProyecto = imagenes.imgPro4;
         break;
+        default:
+            break;
 
     }
 
     const handleOpen = () => {
         setOpen(true);
-        console.log(project.id);
-        console.log(project)
       };
     
       const handleClose = () => {
@@ -170,7 +166,7 @@ const Proyecto = ({project}) => {
             open={open}
             onClose={handleClose}
         >
-            <div style={modalStyle} className={classes.modal}>
+            <div style={modalStyle} className={`${classes.modal} modal`}>
 
                 <div className="contenido-modal">
                 <h2 id="simple-modal-title">{nombre}</h2>
@@ -201,7 +197,7 @@ const Proyecto = ({project}) => {
                         </IconosInferiores>
                         <BotonVer 
                             onClick={handleClose}
-                        >Cerrar X</BotonVer>
+                        >Cerrar &times;</BotonVer>
                     </DivCard>
                 </div>
             </div>

@@ -64,3 +64,15 @@ h2{
     padding: 0;
   }
 }
+
+.modal{
+  overflow-y: scroll;
+}
+.modal::-webkit-scrollbar{
+  width: 5px;
+}
+.modal::-webkit-scrollbar-thumb{
+  background-color: #4b24b5;
+  border-radius: 30px;
+  height: 2rem;
+}
