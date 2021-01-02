@@ -34,7 +34,8 @@ const DivImagenesDC = styled.div`
     column-gap: 1rem;
 
     img{
-        width: 10rem;
+        max-width: 100%;
+        
     }
 `;
 

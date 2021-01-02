@@ -88,14 +88,14 @@ const useStyles = makeStyles(theme => ({
         height: '100%',
         maxHeight: 500,
         display: 'block'
-        },
-        header: {
-        padding: '12px 0',
-        borderBottom: '1px solid darkgrey'
-        },
-        content: {
+      },
+      content: {
         padding: "12px 0",
         overflow: 'scroll'
+        },
+      header: {
+            padding: '12px 0',
+            borderBottom: '1px solid darkgrey'
         },
 }));
 
