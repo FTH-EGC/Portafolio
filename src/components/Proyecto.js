@@ -10,6 +10,8 @@ const DivProyecto = styled.div`
     border-radius: 10px;
     text-align: center;
     padding: 1rem;
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 2rem;
 
     h3{
         font-size: 2rem;
@@ -34,16 +36,15 @@ const IconosLenguajes = styled.div`
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     img{
-        width: 4rem;
+        height: 5rem;
     }
 
 `;
 const ImagenGit = styled.img`
     width: 3rem;
-    margin-top: 2rem;
 
 `;
 
@@ -55,13 +56,35 @@ const BotonVer = styled.button`
     color: #ffffff;
     font-size: 1.2rem;
     border: none;
-    
+    transition: all .3s ease-in-out;
     &:hover{
         cursor: pointer;
+        background-color: #4b24b5;
     }
     &:focus{
         outline: none;
     }
+
+`;
+
+const IconosInferiores = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+
+    p{
+        font-size: 1.1.rem;
+        font-weight: 400;
+    }
+`;
+
+const ParrafoDescripción = styled.p`
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2;
 
 `;
 
@@ -78,25 +101,24 @@ function getModalStyle() {
 
 
 const useStyles = makeStyles(theme => ({
-    paper: {
+    modal: {
         position: 'absolute',
-        width: 300,
-        backgroundColor: theme.palette.background.paper,
+        width: 700,
+        backgroundColor: '#f5f5f5',
+        border: '2px solid #000',
         boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
+        padding: theme.spacing(2,4,3,4),
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
         overflow: 'scroll',
         height: '100%',
-        maxHeight: 500,
-        display: 'block'
-      },
-      content: {
-        padding: "12px 0",
+        maxHeight: 900
+
+    },
+    content:{
         overflow: 'scroll'
-        },
-      header: {
-            padding: '12px 0',
-            borderBottom: '1px solid darkgrey'
-        },
+    }
 }));
 
 const Proyecto = ({project}) => {
@@ -107,7 +129,7 @@ const Proyecto = ({project}) => {
 
     const classes = useStyles();
     
-    const {nombre, descripcion, Enlace, pagina, imagen, iconos} = project;
+    const {nombre, descripcion, Enlace, pagina, imagen, iconos,imagenFull} = project;
 
     let imagenProyecto;
     switch(imagen){
@@ -143,29 +165,46 @@ const Proyecto = ({project}) => {
         <h3>{nombre}</h3>
         <BotonVer onClick={handleOpen}>Ver Más</BotonVer>
         <Modal
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
-        open={open}
-        onClose={handleClose}
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+            open={open}
+            onClose={handleClose}
         >
-        <div style={modalStyle} className={classes.paper}>
-        <h2 id="simple-modal-title">{nombre}</h2>
-            <DivCard>
-                <img src={imagenProyecto} alt="Imagen Proyecto"/>
-                <p>{descripcion}</p>
-                <IconosLenguajes>
-                    {iconos.map(icono => (
-                        <Icono
-                        key={icono}
-                            icono={icono}
-                        />
-                    ))}
-                </IconosLenguajes>
-                <a href={Enlace} target="_blank" rel="noreferrer noopener">
-                    <ImagenGit src={imagenes.imgGitHub} alt=""/>
-                </a>
-            </DivCard>
-        </div>
+            <div style={modalStyle} className={classes.modal}>
+
+                <div className="contenido-modal">
+                <h2 id="simple-modal-title">{nombre}</h2>
+                    <DivCard>
+                        <img src={ imagenFull ? imagenes.imgPro4Full : imagenProyecto} alt="Imagen Proyecto"/>
+                        <ParrafoDescripción>{descripcion}</ParrafoDescripción>
+                        <IconosLenguajes>
+                            {iconos.map(icono => (
+                                <Icono
+                                key={icono}
+                                    icono={icono}
+                                />
+                            ))}
+                        </IconosLenguajes>
+                        <IconosInferiores>
+                            <div>
+                                <p>Ver Código en GitHub</p>
+                                <a href={Enlace} target="_blank" rel="noreferrer noopener">
+                                    <ImagenGit src={imagenes.imgGitHub} alt="Imagen Git"/>
+                                </a>
+                            </div>
+                            <div>
+                                <p>Ver Proyecto Funcionando</p>
+                                <a href={pagina} target="_blank" rel="noreferrer noopener">
+                                    <ImagenGit src={imagenes.imgLinks} alt="Imagen Link"/>
+                                </a>
+                            </div>
+                        </IconosInferiores>
+                        <BotonVer 
+                            onClick={handleClose}
+                        >Cerrar X</BotonVer>
+                    </DivCard>
+                </div>
+            </div>
         </Modal>
 
         </DivProyecto>

@@ -21,7 +21,10 @@ import Proyecto1 from './img/proyecto1.png';
 import Proyecto2 from './img/proyecto2.png';
 import Proyecto3 from './img/proyecto3.png';
 import Proyecto4 from './img/proyecto4.png';
+import Proyecto4Full from './img/proyecto4full.png';
 import Github from './img/github-icon-1.svg';
+import LinkImg from './img/links.svg';
+import Styled from './img/styled-components.svg';
 
 
 
@@ -49,5 +52,8 @@ export const imagenes = {
     imgPro2: Proyecto2,
     imgPro3: Proyecto3,
     imgPro4: Proyecto4,
-    imgGitHub: Github
+    imgPro4Full: Proyecto4Full,
+    imgGitHub: Github,
+    imgLinks: LinkImg,
+    imgStyled: Styled
 }

@@ -3,7 +3,7 @@
         {
             "id": "1",
             "nombre": "Handy Transport",
-            "descripcion": "Pagina estática desarrollada con:",
+            "descripcion": "Pagina estática de transporte, cuenta con una página principal y 4 secciones más (Descargas, Ayuda, Nosotros y Contacto). Está desarrollada con:",
             "iconos": ["HTML5", "CSS3", "JS"],
             "Enlace": "https://github.com/FTH-EGC/Handy-Transport",
             "pagina": "https://handy-transport.herokuapp.com/",
@@ -12,8 +12,8 @@
         {
             "id": "2",
             "nombre": "Aplicación del clima",
-            "descripcion": "Aplicación creada con:",
-            "iconos": ["React", "CSS3"],
+            "descripcion": "Aplicación que te muestra el clima colocando la ciudad y el país. Se utilizó la API de OpenWeather y está desarrollada con:",
+            "iconos": ["React", "CSS3", "JS"],
             "Enlace": "https://github.com/FTH-EGC/app-Clima",
             "pagina": "https://fth-egc.github.io/app-Clima/",
             "imagen": "imgPro2"
@@ -21,8 +21,8 @@
         {
             "id": "3",
             "nombre": "Aplicación de citas",
-            "descripcion": "Aplicación creada con:",
-            "iconos": ["React", "CSS3"],
+            "descripcion": "Aplicación de gestión de citas de un consultorio, cuenta con las operaciones 4 operaciones del CRUD (Crear, Leer, Actualizar, Eliminar). Está desarrollada con:",
+            "iconos": ["React", "CSS3","Styled"],
             "Enlace": "https://github.com/FTH-EGC/App-Clientes",
             "pagina": "https://fth-egc.github.io/App-Clientes/",
             "imagen": "imgPro3"
@@ -30,10 +30,11 @@
         {
             "id": "4",
             "nombre": "Aplicación de películas",
-            "descripcion": "Aplicación creada con:",
-            "iconos": ["React", "CSS3"],
+            "descripcion": "Aplicación de información de películas que utiliza la API de IMDb. Está desarrollada con:",
+            "iconos": ["React", "CSS3","JS"],
             "Enlace": "https://github.com/FTH-EGC/peliculas",
             "pagina": "https://fth-egc.github.io/peliculas/",
-            "imagen": "imgPro4"
+            "imagen": "imgPro4",
+            "imagenFull": true
         }
     ]

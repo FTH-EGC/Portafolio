@@ -50,9 +50,14 @@ const DivDescripcionP = styled.div`
 const DivProyectos = styled.div`
 
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 `;
 
 

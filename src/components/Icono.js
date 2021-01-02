@@ -18,6 +18,9 @@ const Icono = ({icono}) => {
         case 'React': 
             iconLenguajes = imagenes.imgReact;
         break;
+        case 'Styled': 
+        iconLenguajes = imagenes.imgStyled;
+    break;
 
     }
 
