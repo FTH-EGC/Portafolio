@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from '@emotion/styled';
 import {imagenes} from '../assets/imagenes';
+import projects from '../proyectos.json';
+import Proyecto from './Proyecto';
 
 
 const DivContenidoTec = styled.div`
@@ -48,49 +50,24 @@ const DivProyectos = styled.div`
 
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-`;
-
-const DivProyecto = styled.div`
-    background-color: #F5F5F5;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-
-    h3{
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-`;
-
-const DivCard = styled.div`
-    display: none;
-
-
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 3rem;
 `;
 
 
-const BotonVer = styled.button`
-    background-color: #8E59DE;
-    width: 100%;
-    padding: 1rem;
-    color: #ffffff;
-    font-size: 1.2rem;
-    border: none;
-    
-    &:hover{
-        cursor: pointer;
-    }
-    &:focus{
-        outline: none;
-    }
+
+const ImagenProyecto = styled.img`
+
+    width: 20rem;
 
 `;
+
 
 
 const Proyectos = () => {
+
+
+
     return ( 
         <section className="seccion-proyectos">
             <h2>Proyectos</h2>
@@ -98,7 +75,7 @@ const Proyectos = () => {
             <div className="contenedor">
                 <DivContenidoTec>
                     <DivImgaenes>
-                        <img src={imagenes.imgLaptop} alt="Imagen Dispositivo"/>
+                        <ImagenProyecto src={imagenes.imgLaptop} alt="Imagen Dispositivo"/>
                         <DivImagenesDC>
                             <img src={imagenes.imgTablet} alt="Imagen Dispositivo"/>
                             <img src={imagenes.imgCelular} alt="Imagen Dispositivo"/>
@@ -113,40 +90,15 @@ const Proyectos = () => {
                 </DivContenidoTec>
 
                 <DivProyectos>
-                    <DivProyecto>
-                        <img src={imagenes.imgPro1} alt="Imagen Proyecto"/>
-                        <h3>Handy Transport</h3>
-                        <p>Página estática desarrollada con:</p>
-                        <BotonVer>Ver Más</BotonVer>
-                        <DivCard>
-                            <div>
-                                <img src={imagenes.imgHTML5} alt="Iconos Lenguajes"/>
-                                <img src={imagenes.imgCss3} alt="Iconos Lenguajes"/>
-                                <img src={imagenes.imgJS} alt="Iconos Lenguajes"/>
-                            </div>
-                            <a href="https://github.com/FTH-EGC/Handy-Transport" target="_blank" rel="noreferrer noopener">
-                                <img src={imagenes.imgGitHub} alt=""/>
-                            </a>
-                        </DivCard>
-
-                    </DivProyecto>
-                    <DivProyecto>
-                        <img src={imagenes.imgPro1} alt="Imagen Proyecto"/>
-                        <h3>Handy Transport:</h3>
-                        <p>Página estática desarrollada con:</p>
-                        <DivCard>
-                            <div>
-                                <img src={imagenes.imgHTML5} alt="Iconos Lenguajes"/>
-                                <img src={imagenes.imgCss3} alt="Iconos Lenguajes"/>
-                                <img src={imagenes.imgJS} alt="Iconos Lenguajes"/>
-                            </div>
-                            <a href="https://github.com/FTH-EGC/Handy-Transport" target="_blank" rel="noreferrer noopener">
-                                <img src={imagenes.imgGitHub} alt=""/>
-                            </a>
-                        </DivCard>
-
-                    </DivProyecto>
+                    {projects.map(project => (
+                        
+                        <Proyecto 
+                            key={project.id}
+                            project={project}
+                        />
+                    ))}
                 </DivProyectos>
+
 
             </div>
 

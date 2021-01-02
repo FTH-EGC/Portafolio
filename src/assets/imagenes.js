@@ -18,6 +18,9 @@ import Dev3 from './img/iconoD3.svg';
 import Dev4 from './img/iconoD4.svg';
 import Dev5 from './img/iconoD5.svg';
 import Proyecto1 from './img/proyecto1.png';
+import Proyecto2 from './img/proyecto2.png';
+import Proyecto3 from './img/proyecto3.png';
+import Proyecto4 from './img/proyecto4.png';
 import Github from './img/github-icon-1.svg';
 
 
@@ -43,5 +46,8 @@ export const imagenes = {
     imgDev4: Dev4,
     imgDev5: Dev5,
     imgPro1: Proyecto1,
+    imgPro2: Proyecto2,
+    imgPro3: Proyecto3,
+    imgPro4: Proyecto4,
     imgGitHub: Github
 }
