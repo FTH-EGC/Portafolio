@@ -17,6 +17,10 @@ import Dev2 from './img/iconoD2.svg';
 import Dev3 from './img/iconoD3.svg';
 import Dev4 from './img/iconoD4.svg';
 import Dev5 from './img/iconoD5.svg';
+import Proyecto1 from './img/proyecto1.png';
+import Github from './img/github-icon-1.svg';
+
+
 
 export const imagenes = {
     imgCelular: Celular,
@@ -31,11 +35,13 @@ export const imagenes = {
     imgReact: React,
     imgSass: Sass,
     imgSobreMi: SobreMi,
-    imgTabler: Tablet,
+    imgTablet: Tablet,
     imgTailwind: Tailwind,
     imgDev1: Dev1,
     imgDev2: Dev2,
     imgDev3: Dev3,
     imgDev4: Dev4,
-    imgDev5: Dev5
+    imgDev5: Dev5,
+    imgPro1: Proyecto1,
+    imgGitHub: Github
 }

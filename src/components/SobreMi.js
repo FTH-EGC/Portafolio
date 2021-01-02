@@ -27,7 +27,7 @@ const DescripcionPersonal = styled.div`
     flex-basis: 50%;
     line-height: 2;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 
 `;
 
