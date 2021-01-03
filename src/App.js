@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import SobreMi from './components/SobreMi';
 import Tecnologias from './components/Tecnologias';
 import Proyectos from './components/Proyectos';
-
+import Contacto from './components/Contacto';
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
     <SobreMi /> 
     <Tecnologias /> 
     <Proyectos />
+    <Contacto />
     </Fragment>
   );
 }
