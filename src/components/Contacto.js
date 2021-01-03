@@ -26,6 +26,10 @@ const DivCardCon = styled.div`
     column-gap: 2rem;
     align-items: center;
 
+    &:hover{
+        transform: scale(1.1, 1.05);
+    }
+
 `;
 
 const DivDescCon = styled.div`
@@ -57,7 +61,7 @@ const Contacto = () =>{
     return(
         <section className="seccion-contacto contenedor">
             <h2>Contacto</h2>
-            <h3>Contáctame y creemos grandes proyectos</h3>
+            <h3>Contáctame y crearemos grandes proyectos</h3>
 
             <DivContenedorCards>
                 <DivCardCon>

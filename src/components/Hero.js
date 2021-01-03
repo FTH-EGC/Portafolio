@@ -158,6 +158,11 @@ const Hero = () => {
         const seccionTec = document.querySelector('.seccion-proyectos');
         seccionTec.scrollIntoView({behavior: 'smooth'}); 
     } 
+    const scrollElementoCon= e => {
+        e.preventDefault();
+        const seccionTec = document.querySelector('.seccion-contacto');
+        seccionTec.scrollIntoView({behavior: 'smooth'}); 
+    } 
 
 
     return ( 
@@ -196,7 +201,7 @@ const Hero = () => {
                         <a href="!#" onClick={ scrollElemento}>Sobre Mí</a>
                         <a href="!#" onClick={scrollElementoTec}>Tecnologías</a>
                         <a href="!#" onClick={scrollElementoPro}>Proyectos</a>
-                        <a href="!#">Contacto</a>
+                        <a href="!#" onClick={scrollElementoCon}>Contacto</a>
                     </Nav>
                 </div>
 

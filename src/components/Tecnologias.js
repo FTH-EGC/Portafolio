@@ -20,9 +20,9 @@ const Tecnologia = styled.div`
 
 
     &:hover{
-    -webkit-box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.71);
-    -moz-box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.71);
-    box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 
 `;
