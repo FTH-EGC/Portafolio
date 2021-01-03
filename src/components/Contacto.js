@@ -102,7 +102,7 @@ const Contacto = () =>{
                     </DivCardCon>
                 </a>
 
-                <a href="https://www.linkedin.com/in/erick-garc%C3%ADa-castillo-951746201/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/erick-garcía-castillo" target="_blank" rel="noopener noreferrer">
                     <DivCardCon>
                         <DivDescCon>   
                             <p>LinkedIn</p>
