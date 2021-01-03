@@ -88,3 +88,8 @@ h2{
   font-weight: 400;
   text-align: center;
 }
+
+.footer{
+  background-color: #8E59DE;
+  padding: 2rem;
+}

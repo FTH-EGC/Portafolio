@@ -25,9 +25,9 @@ const DivCardCon = styled.div`
     grid-template-columns: repeat(2, auto);
     column-gap: 2rem;
     align-items: center;
-
+    transition: all .5s ease-in-out;
     &:hover{
-        transform: scale(1.1, 1.05);
+        transform: scale(1.1, 1.1);
     }
 
 `;
