@@ -190,7 +190,11 @@ const Hero = () => {
                                 })}
                                 </h1>
                             );
-                            }}        
+                            }}
+                            speed={150} 
+                            eraseSpeed={200}   
+                            typingDelay={2000}  
+                            cursor={'|'}  
                     />
                     <h2>Desarrollador Web</h2>
                     <p>{texto}</p>

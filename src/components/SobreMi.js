@@ -55,6 +55,9 @@ const SobreMi = () => {
                                 Hola! Me llamo Erick García, tengo 22 años, estudié la carrera de Ing. en Sistemas Computacionales 
                                 y me especialicé en Proyectos Informáticos y Tecnología Web.
                             </p>
+                            <p>
+                                Mi meta es desarrollar aplicaciones y páginas web grandes, además de dominar más tecnologías en un futuro cercano.
+                            </p>
                         </DescripcionPersonal>
                         <DivImagenMi>
                             <ImagenMi src={imagenes.imgSobreMi} alt="Imagen Sobre Mi"/>
