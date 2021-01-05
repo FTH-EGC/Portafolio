@@ -56,7 +56,7 @@ const SobreMi = () => {
                                 y me especialicé en Proyectos Informáticos y Tecnología Web.
                             </p>
                             <p>
-                                Mi meta es desarrollar aplicaciones y páginas web grandes, además de dominar más tecnologías en un futuro cercano.
+                                Mi meta es desarrollar aplicaciones y páginas web en grandes proyectos, además de dominar más tecnologías en un futuro cercano.
                             </p>
                         </DescripcionPersonal>
                         <DivImagenMi>

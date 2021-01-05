@@ -33,13 +33,11 @@ const DivCard = styled.div`
 const IconosLenguajes = styled.div`
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
-    align-items: center;
+    grid-template-columns: repeat(3, max-content);
+    gap: 3rem;
     margin-top: 1rem;
-
     img{
-        height: 5rem;
+        height: 4.5rem;
     }
 
 `;

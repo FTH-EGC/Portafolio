@@ -13,7 +13,7 @@
             "id": "2",
             "nombre": "Aplicación del clima",
             "descripcion": "Aplicación que te muestra el clima colocando la ciudad y el país. Se utilizó la API de OpenWeather y está desarrollada con:",
-            "iconos": ["React", "CSS3", "JS"],
+            "iconos": ["React", "Tailwind", "JS"],
             "Enlace": "https://github.com/FTH-EGC/app-Clima",
             "pagina": "https://fth-egc.github.io/app-Clima/",
             "imagen": "imgPro2"

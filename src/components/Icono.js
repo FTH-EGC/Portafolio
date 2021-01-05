@@ -21,6 +21,9 @@ const Icono = ({icono}) => {
         case 'Styled': 
         iconLenguajes = imagenes.imgStyled;
         break;
+        case 'Tailwind': 
+        iconLenguajes = imagenes.imgTailwind;
+        break;
 
         default:
             break;
