@@ -9,7 +9,8 @@ const DivContenidoTec = styled.div`
     display: grid;
     grid-template-rows: repeat(2, max-content);
     column-gap: 2rem;
-
+    align-items: center;
+    justify-content: center;
     @media (min-width: 768px){
         grid-template-columns: 30% 60%;
     }
@@ -30,13 +31,13 @@ const DivImgaenes = styled.div`
 
 const DivImagenesDC = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     column-gap: 1rem;
 
     img{
-        max-width: 100%;
-        
+        height: 6rem;
     }
+
 `;
 
 const DivDescripcionP = styled.div`
@@ -60,12 +61,14 @@ const DivProyectos = styled.div`
     }
 `;
 
-
-
 const ImagenProyecto = styled.img`
 
     width: 20rem;
 
+`;
+const DivImgProyecto = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 
@@ -81,7 +84,9 @@ const Proyectos = () => {
             <div className="contenedor">
                 <DivContenidoTec>
                     <DivImgaenes>
-                        <ImagenProyecto src={imagenes.imgLaptop} alt="Imagen Dispositivo"/>
+                        <DivImgProyecto>
+                            <ImagenProyecto src={imagenes.imgLaptop} alt="Imagen Dispositivo"/>
+                        </DivImgProyecto>
                         <DivImagenesDC>
                             <img src={imagenes.imgTablet} alt="Imagen Dispositivo"/>
                             <img src={imagenes.imgCelular} alt="Imagen Dispositivo"/>
