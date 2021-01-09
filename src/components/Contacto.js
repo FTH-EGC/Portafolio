@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 const DivContenedorCards = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -15,17 +15,16 @@ const DivContenedorCards = styled.div`
 `;
 
 const DivCardCon = styled.div`
-
     border-radius: 20px;
     border: 3px solid #4B24B5;
     background-color: #f5f5f5;
     color: #4B24B5;
     padding: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     transition: all .5s ease-in-out;
+
     &:hover{
         transform: scale(1.1, 1.1);
     }
@@ -67,7 +66,7 @@ const Contacto = () =>{
                 <DivCardCon>
                     <DivDescCon>   
                         <p>UBICACIÓN</p>
-                        <p><span>Tlalnepantla de Baz - México</span></p>
+                        <p><span>Tlalnepantla - México</span></p>
                     </DivDescCon>
                     <DivIconosCon>
                         <i className="fas fa-map-marker-alt"></i>
@@ -88,11 +87,11 @@ const Contacto = () =>{
                     </DivCardCon>
                 </a>
 
-                <a href="mailto: ironmaiden-emylle@hotmail.com" target="_blank" rel="noreferrer noopener">
+                <a href="mailto: codingerick@hotmail.com" target="_blank" rel="noreferrer noopener">
                     <DivCardCon>
                         <DivDescCon>   
                             <p>EMAIL</p>
-                            <p><span>ironmaiden-emylle@hotmail.com</span></p>
+                            <p><span>codingerick@hotmail.com</span></p>
                         </DivDescCon>
                         <DivIconosCon>
 
