@@ -1,6 +1,7 @@
 {
   "name": "portafolio",
   "version": "0.1.0",
+  "homepage": "http://codingerick.com",
   "private": true,
   "dependencies": {
     "@emotion/core": "^11.0.0",
