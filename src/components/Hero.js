@@ -2,8 +2,7 @@ import React, {useRef, useEffect} from 'react';
 import styled from '@emotion/styled';
 import {TweenMax, TimelineLite, Power3} from 'gsap';
 import {imagenes} from '../assets/imagenes';
-import ReactTypingEffect from 'react-typing-effect';
-
+import Typewriter from 'typewriter-effect';
 
 const SectionHero = styled.section`
 
@@ -173,29 +172,15 @@ const Hero = () => {
                     <ImagenHero1 src={imagenes.imgHero} alt=""/>
                 </ContenedorImagenHero>
                 <ContenidoPrincipal>
-                    <ReactTypingEffect
-                            text={["Erick García Castillo"]}
-                            cursorRenderer={cursor => <h1>{cursor}</h1>}
-                            displayTextRenderer={(text, i) => {
-                            return (
-                                <h1>
-                                {text.split('').map((char, i) => {
-                                    const key = `${i}`;
-                                    return (
-                                    <span
-                                        key={key}
-                                        style={{color: 'white'}}
-                                    >{char}</span>
-                                    );
-                                })}
-                                </h1>
-                            );
-                            }}
-                            speed={150} 
-                            eraseSpeed={200}   
-                            typingDelay={2000}  
-                            cursor={'|'}  
-                    />
+                    <h1>
+                    <Typewriter
+                        options={{
+                            strings: ['Erick García Castillo'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                        />
+                    </h1>
                     <h2>Desarrollador Web</h2>
                     <p>{texto}</p>
                 </ContenidoPrincipal>
