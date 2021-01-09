@@ -34,10 +34,15 @@ const IconosLenguajes = styled.div`
 
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    gap: 3rem;
+    column-gap: 3rem;
     margin-top: 1rem;
     img{
-        height: 4.5rem;
+        height: 3.2rem;
+    }
+    @media (min-width: 768px){
+        img{
+            height: 4.5rem;
+        }
     }
 
 `;
