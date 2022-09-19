@@ -21,6 +21,8 @@ h2{
   margin: 1rem;
 }
 
+/* contenedor */
+
 .contenedor-imagenes{
   width: 90%;
   max-width: 1600px;
@@ -33,10 +35,13 @@ h2{
   margin: 0 auto;
 }
 
+/* personal */
 
 .seccion-personal{
   margin-top: 5rem;
 }
+
+/* tecnologias */
 .seccion-tecnologias{
   background-color: #8558c5;
   padding: 1rem 0 2rem 0;
@@ -47,9 +52,12 @@ h2{
   color: #ffffff;
 }
 
+/* proyectos */
 .seccion-proyectos h2{
   color: #ffffff;
 }
+
+/* contenido */
 
 .contenido-modal{
   max-width: 60%;
@@ -76,6 +84,32 @@ h2{
   border-radius: 30px;
   height: 2rem;
 }
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* ccontacto */
+
 .seccion-contacto{
   margin-bottom: 2rem;
 }

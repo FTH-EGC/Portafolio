@@ -52,7 +52,7 @@ const SobreMi = () => {
                     <ContenidoPersonal>
                         <DescripcionPersonal>
                             <p>
-                                Hola! Me llamo Erick García, tengo 22 años, estudié la carrera de Ing. en Sistemas Computacionales 
+                                Hola! Me llamo Erick García, tengo 24 años, estudié la carrera de Ing. en Sistemas Computacionales 
                                 y me especialicé en Proyectos Informáticos y Tecnología Web.
                             </p>
                             <p>

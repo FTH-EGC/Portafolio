@@ -28,7 +28,7 @@ const ContenedorImagenHero2 = styled.div`
         transition: all .7s;
 
         @media (min-width: 768px){
-            height: 6rem;
+            height: 4rem;
         }
     }
     @media (min-width: 768px){

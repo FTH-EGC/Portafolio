@@ -54,7 +54,7 @@ const Tecnologias = () => {
                         <Img src={imagenes.imgCss3} alt="Imagen CSS3"/>
                     </Tecnologia>
                     <Tecnologia>
-                        <img src={imagenes.imgTailwind} alt="Imagen Tailwind"/>
+                        <Img3 src={imagenes.imgTailwind2} alt="Imagen Tailwind"/>
                     </Tecnologia>
                     <Tecnologia>
                         <Img2 src={imagenes.imgSass} alt="Imagen SASS"/>
@@ -63,15 +63,26 @@ const Tecnologias = () => {
                         <Img2 src={imagenes.imgJS} alt="Imagen JS"/>
                     </Tecnologia>
                     <Tecnologia>
-                        <Img3 src={imagenes.imgNpm} alt="Imagen NPM"/>
+                        <Img3 src={imagenes.imgJquery} alt="Imagen JQuery"/>
                     </Tecnologia>
                     <Tecnologia>
-                        <Img3 src={imagenes.imgReact} alt="Imagen React"/>
+                        <Img2 src={imagenes.imgReact} alt="Imagen React"/>
                     </Tecnologia>
                     <Tecnologia>
-                        <Img3 src={imagenes.imgPhp} alt="Imagen PHP"/>
+                        <Img3 src={imagenes.imgSQLServer} alt="Imagen SQL Server"/>
                     </Tecnologia>
-
+                    <Tecnologia>
+                        <Img2 src={imagenes.imgC4} alt="Imagen c#"/>
+                    </Tecnologia>
+                    <Tecnologia>
+                        <Img2 src={imagenes.imgBootstrap} alt="Imagen Bootstrap"/>
+                    </Tecnologia>
+                    <Tecnologia>
+                        <Img2 src={imagenes.imgXamarin} alt="Imagen Xamarin"/>
+                    </Tecnologia>
+                    <Tecnologia>
+                        <Img3 src={imagenes.imgDevExpress} alt="Imagen DevExpress"/>
+                    </Tecnologia>
                 </TecnologiasDiv>
             </div>
         </section>

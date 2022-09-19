@@ -66,7 +66,7 @@ const Contacto = () =>{
                 <DivCardCon>
                     <DivDescCon>   
                         <p>UBICACIÓN</p>
-                        <p><span>Tlalnepantla - México</span></p>
+                        <p><span>Azcapotzalco - CDMX</span></p>
                     </DivDescCon>
                     <DivIconosCon>
                         <i className="fas fa-map-marker-alt"></i>

@@ -25,7 +25,13 @@ import Proyecto4Full from './img/proyecto4full.jpg';
 import Github from './img/github-icon-1.svg';
 import LinkImg from './img/links.svg';
 import Styled from './img/styled-components.svg';
-
+import SQLServer from './img/SQLServer.svg';
+import JQuery from './img/jquerylogo.svg';
+import C4 from './img/c--4.svg';
+import Bootstrap from './img/bootstrap-4.svg';
+import DevExpress from './img/DevExpress.svg';
+import Tailwind2 from './img/tailwind-css-1.svg';
+import Xamarin from './img/xamarin-logo.svg';
 
 
 export const imagenes = {
@@ -55,5 +61,12 @@ export const imagenes = {
     imgPro4Full: Proyecto4Full,
     imgGitHub: Github,
     imgLinks: LinkImg,
-    imgStyled: Styled
+    imgStyled: Styled,
+    imgSQLServer: SQLServer,
+    imgJquery: JQuery,
+    imgC4: C4,
+    imgBootstrap: Bootstrap,
+    imgDevExpress: DevExpress,
+    imgTailwind2: Tailwind2,
+    imgXamarin: Xamarin,
 }
